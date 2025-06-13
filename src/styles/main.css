@@ -1,0 +1,30 @@
+/**
+ * Main stylesheet for the Psychopism website
+ * Imports all modular CSS files in the correct order
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Import base styles and reset */
+@import './base.css';
+
+/* Import component styles */
+@import './components.css';
+
+/* Import responsive styles */
+@import './responsive.css';
+
+/**
+ * CSS architecture follows ITCSS (Inverted Triangle CSS) methodology:
+ * 1. Settings - Global variables and configuration
+ * 2. Tools - Mixins and functions (would be in Sass/PostCSS)
+ * 3. Generic - Reset, normalize, box-sizing
+ * 4. Elements - Base HTML element styles
+ * 5. Objects - Design patterns and layout
+ * 6. Components - UI components and blocks
+ * 7. Utilities - Helper classes and overrides
+ * 
+ * This ensures proper cascade and specificity management.
+ */
+

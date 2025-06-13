@@ -1,0 +1,44 @@
+{
+  "name": "psychopism-website",
+  "version": "0.3.0-dev",
+  "description": "Official website for Psychopism - an open-source psychedelic video game",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "./build.sh",
+    "dev": "tsc --watch",
+    "serve": "python3 -m http.server 8000",
+    "clean": "rm -rf dist/",
+    "typecheck": "tsc --noEmit",
+    "start": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "psychopism",
+    "open-source",
+    "game",
+    "psychedelic",
+    "rust",
+    "indie",
+    "website",
+    "typescript"
+  ],
+  "author": "Psychopism Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychopism/website.git"
+  },
+  "homepage": "https://psychopism.game",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not op_mini all"
+  ]
+}
+

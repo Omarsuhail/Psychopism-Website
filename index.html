@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychopism - Psychedelic Open-Source Game</title>
+    <meta name="description" content="An open-source psychedelic video game where reality distorts and logic is just an illusion. Dive into the depths of the mind in a world that changes with you.">
+    <meta name="keywords" content="psychopism, open source, game, psychedelic, rust, indie">
+    <meta name="author" content="Psychopism Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Psychopism - Psychedelic Open-Source Game">
+    <meta property="og:description" content="An open-source psychedelic video game where reality distorts and logic is just an illusion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psychopism.game">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" as="style">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="./dist/styles/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Psychopism",
+      "description": "An open-source psychedelic video game where reality distorts and logic is just an illusion.",
+      "genre": "Indie",
+      "operatingSystem": ["Windows", "Linux", "macOS"],
+      "applicationCategory": "Game",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Page Header with title and navigation -->
+    <header class="container header">
+        <div class="header__titles">
+            <h1 id="header-title" class="header__title">PSYCHOPISM</h1>
+            <small class="header__version">Rust Edition. Version: 0.3.0-dev</small>
+        </div>
+        <nav>
+            <!-- Navigation will be populated by JavaScript -->
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- Hero Header Section -->
+        <section id="hero-header-section" class="container hero">
+            <h2 id="hero-title" class="hero__title">PSYCHOPISM</h2>
+            <p id="hero-description" class="hero__description">
+                An open-source psychedelic video game where reality distorts and logic is just an illusion.
+                Dive into the depths of the mind in a world that changes with you.
+            </p>
+            <div class="hero__buttons">
+                <button class="btn">Download Game</button>
+                <button class="btn">Contribute</button>
+                <button id="open-settings" onclick="openSettings()" class="btn settings-btn">
+                    <span class="settings-btn__text">Page Settings</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works-section" class="container section">
+            <h2 class="section__title">How It Works</h2>
+            <div class="section__content">
+                <p>
+                    Psychopism is not just a game, it's a <strong>living experiment in interactive art</strong>, constantly evolving thanks to the efforts of a passionate community. The core principle of the game is <strong>procedural generation of distorted worlds</strong>, where every element, from textures to sounds, is created on the fly, reacting to your actions and perception. This means that each playthrough will be unique, and the game's reality will change with you.
+                </p>
+                <p>
+                    We use innovative <strong>distortion algorithms</strong> that dynamically transform visual and audio data, creating the effect of "glitches" and psychedelic experiences. The deeper you immerse yourself in the world of Psychopism, the stronger the distortions, requiring you to adapt and think outside the box.
+                </p>
+                <p>
+                    <strong>Community is the heart of Psychopism</strong>. We believe in the power of collective creativity. Players can not only enjoy the game but also actively participate in its development: suggest new mechanics, create art, write storylines, and, of course, contribute to the code. Our <strong>open-source code</strong> invites everyone to join this surreal adventure.
+                </p>
+            </div>
+        </section>
+
+        <!-- Feature Section (Main Feature) -->
+        <section id="feature-section" class="container section">
+            <h2 class="section__title">Main Feature: Distorting Reality</h2>
+            <div class="section__content">
+                <p>
+                    The foundation of Psychopism is a <strong>dynamic world</strong> that constantly changes and adapts to the player's actions and perception. Visual elements don't just form static scenes; they distort, rearrange, and morph in response to your progress. This creates a unique and unpredictable experience where you never know what to expect around the next corner. Your mind is your compass in this ever-changing landscape.
+                </p>
+                <p>
+                    <strong>Example of distortions:</strong> At one moment, the landscape might be stable, and the next, visuals begin to "bleed," colors invert, and sounds distort. These effects are not random; they are often tied to your in-game state or key plot points, creating a deep connection between the player and the world.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features List Section -->
+        <section id="features-list-section" class="container section">
+            <h2 class="section__title">Additional Features</h2>
+            <div class="section__content">
+                <div class="feature">
+                    <h3 class="feature__title">Cooperative Play (Multiplayer)</h3>
+                    <p class="feature__description">
+                        Explore distorted worlds together with friends. Psychopism supports <strong>cooperative play</strong>, allowing you to share the psychedelic experience and jointly solve puzzles that require multiple perspectives. The cooperative mode offers unique challenges where coordination and interaction become key to survival in an ever-changing reality.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title">Customizable Distortion Parameters</h3>
+                    <p class="feature__description">
+                        Influence the level of psychedelic effect and world distortion parameters. The game provides a wide range of <strong>settings</strong>, allowing you to customize the visual and audio experience to your preferences. From subtle distortions to full immersion in chaos — you choose the intensity of your journey.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title">Dynamic Adaptive Soundtrack</h3>
+                    <p class="feature__description">
+                        Immerse yourself in the atmosphere of Psychopism with our <strong>dynamic soundtrack</strong> that adapts to your actions and game state. The music distorts and changes in real-time, reflecting the level of madness and unpredictability of the world, creating a truly immersive audio-visual journey.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title">Community-Driven Updates</h3>
+                    <p class="feature__description">
+                        The future of Psychopism is shaped by our community. New levels, mechanics, and visual effects can be proposed and implemented by <strong>active project participants</strong>, making the game truly alive and evolving. Join us to contribute to the evolution of the psychedelic experience!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Requirements Section -->
+        <section id="system-requirements-section" class="container section">
+            <h2 class="section__title">System Requirements</h2>
+            <div class="section__content">
+                <div class="system-requirements">
+                    <h3 class="system-requirements__category">Minimum</h3>
+                    <ol class="system-requirements__list">
+                        <li><strong>Processor:</strong> Intel Core 2 Duo or equivalent.</li>
+                        <li><strong>RAM:</strong> 64 MB.</li>
+                        <li><strong>Video Card:</strong> DirectX 9.0c compatible.</li>
+                        <li><strong>Disk Space:</strong> 200 MB.</li>
+                        <li><strong>Operating System:</strong> Windows XP/Vista/7/8/10, Linux, macOS.</li>
+                    </ol>
+                    <img src="https://placehold.co/600x300/1a1a1a/cccccc?text=Minimum+Requirements" alt="Minimum System Requirements" class="system-requirements__image">
+                </div>
+                <div class="system-requirements">
+                    <h3 class="system-requirements__category">Recommended</h3>
+                    <ol class="system-requirements__list">
+                        <li><strong>Processor:</strong> Intel Core i5 / AMD Ryzen 5 or newer.</li>
+                        <li><strong>RAM:</strong> 4 GB.</li>
+                        <li><strong>Video Card:</strong> DirectX 11 compatible with 1 GB VRAM.</li>
+                        <li><strong>Disk Space:</strong> 500 MB.</li>
+                        <li><strong>Operating System:</strong> Windows 10, Linux (modern distribution), macOS (latest versions).</li>
+                    </ol>
+                    <img src="https://placehold.co/600x300/1a1a1a/cccccc?text=Recommended+Requirements" alt="Recommended System Requirements" class="system-requirements__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section" class="container section">
+            <h2 class="section__title">Frequently Asked Questions</h2>
+            <div class="section__content">
+                <div class="faq-item">
+                    <h3 class="faq-item__question">What is Psychopism?</h3>
+                    <p class="faq-item__answer">
+                        Psychopism is an open-source psychedelic video game created by the community, where reality distorts and logic is just an illusion. Gameplay is built on exploring procedurally generated distorted worlds.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-item__question">How can I contribute?</h3>
+                    <p class="faq-item__answer">
+                        You can contribute to code development, art creation, storyline writing, or testing new mechanics. Our source code is open, and we invite everyone to join us. Details can be found in the "Contribute" section.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-item__question">Will the game be available on other platforms?</h3>
+                    <p class="faq-item__answer">
+                        The game is currently being developed for Windows, Linux, and macOS. In the future, we will consider porting to other platforms depending on community interest and available resources.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-item__question">Where can I download the game?</h3>
+                    <p class="faq-item__answer">
+                        Download links will be available in the "Download Game" section and on our releases page as stable versions are released.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta-section" class="container section cta">
+            <h2 class="cta__title">Join the psychedelic adventure!</h2>
+            <p class="cta__description">
+                Ready to dive into a world where the rules of reality are absent? Download the game or contribute to its development. We are always happy to welcome new members to our community.
+            </p>
+            <div class="cta__contribution">
+                <h3 class="cta__contribution-title">How to contribute:</h3>
+                <ul class="cta__contribution-list">
+                    <li class="cta__contribution-item">
+                        <strong class="cta__contribution-category">Code:</strong> 
+                        If you are proficient in Rust and want to contribute to game logic or rendering, our GitHub repository is always open for pull requests.
+                    </li>
+                    <li class="cta__contribution-item">
+                        <strong class="cta__contribution-category">Art:</strong> 
+                        Talented artists can help with creating digital art, animations, and textures that define the game's visual style.
+                    </li>
+                    <li class="cta__contribution-item">
+                        <strong class="cta__contribution-category">Story/Lore:</strong> 
+                        Help us build a rich and intricate Psychopism universe by creating new storylines, characters, and lore elements.
+                    </li>
+                    <li class="cta__contribution-item">
+                        <strong class="cta__contribution-category">Testing:</strong> 
+                        Find bugs, suggest gameplay improvements, and help us make the game more stable and engaging.
+                    </li>
+                </ul>
+                <p>Contact us via Discord or GitHub to learn more about how to get started.</p>
+            </div>
+            <div class="cta__buttons">
+                <button class="btn">Download Now</button>
+                <button class="btn">Learn More About Contributing</button>
+                <button class="btn">Join the Community</button>
+            </div>
+        </section>
+
+        <!-- Blog List Section -->
+        <section id="blog-list-section" class="container section">
+            <h2 class="section__title">Blog</h2>
+            <div class="section__content">
+                <article class="blog-post">
+                    <h3 class="blog-post__title">Introducing: A First Look at the World of Psychopism!</h3>
+                    <time class="blog-post__date">May 15, 2025</time>
+                    <p class="blog-post__content">
+                        We are excited to present our new project - Psychopism! This game is a deep dive into a visual adventure with a unique psychedelic atmosphere. In this first blog post, we share our vision for the project, the first concepts of the game world, and talk about what inspired us to create this unique game. Get ready for reality to distort!
+                    </p>
+                </article>
+                <article class="blog-post">
+                    <h3 class="blog-post__title">Art Development: Behind the Scenes of Pixel Psychedelia</h3>
+                    <time class="blog-post__date">April 10, 2025</time>
+                    <p class="blog-post__content">
+                        See how we create unique visual effects and digital art that bring the world of Psychopism to life. From initial sketches and distortion prototypes to finished animations, every visual element is imbued with meaning and designed to immerse you in an ever-changing visual symphony. We use advanced digital art techniques to achieve a truly surreal effect.
+                    </p>
+                </article>
+                <article class="blog-post">
+                    <h3 class="blog-post__title">Psychopism Soundtrack: Sounds of Consciousness</h3>
+                    <time class="blog-post__date">March 01, 2025</time>
+                    <p class="blog-post__content">
+                        Music plays a key role in creating the atmosphere of Psychopism. In this post, we share details about the soundtrack that will distort your perception and immerse you deeper into the game. We discuss the concept of dynamic audio, where sounds adapt to your actions and the level of reality distortion, creating a truly unique and unforgettable audio experience.
+                    </p>
+                </article>
+                <article class="blog-post">
+                    <h3 class="blog-post__title">Technical Aspects: Why Rust?</h3>
+                    <time class="blog-post__date">February 20, 2025</time>
+                    <p class="blog-post__content">
+                        In this deep dive, we explain why we chose Rust for Psychopism development. We will explore the benefits of performance, memory safety, and parallel programming capabilities that Rust provides for creating a complex and dynamic game environment. Learn how this choice helps us build a reliable and efficient game.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="container section">
+        <h2 class="section__title">Contact Us</h2>
+        <div class="section__content section__content--center">
+            <p>
+                Do you have questions, suggestions, or just want to say hello? We are always happy to chat!
+                Contact us by email or find us on social media.
+            </p>
+            <div class="contact-info">
+                <div class="contact-info__item">
+                    <h3 class="contact-info__title">Email</h3>
+                    <p class="contact-info__content">
+                        <a href="mailto:contact@psychopism.game" class="contact-info__link">contact@psychopism.game</a>
+                    </p>
+                </div>
+                <div class="contact-info__item">
+                    <h3 class="contact-info__title">Social Media</h3>
+                    <p class="contact-info__content">
+                        <a href="#" class="contact-info__link">Discord</a> |
+                        <a href="#" class="contact-info__link">GitHub</a> |
+                        <a href="#" class="contact-info__link">Twitter</a>
+                        <br>
+                        <small>(Links to actual pages will be added later)</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Footer -->
+    <footer class="container footer">
+        <p>&copy; 2025 Psychopism. All rights reserved.</p>
+        <p>Contact: contact@psychopism.game</p>
+    </footer>
+
+    <!-- Advanced Settings Modal -->
+    <div class="settings-modal" id="settings-modal">
+      <div class="settings-modal__overlay" onclick="closeSettings()"></div>
+      <div class="settings-modal__content">
+        <div class="settings-modal__header">
+          <h2 class="settings-modal__title">Page Settings</h2>
+          <button class="settings-modal__close" onclick="closeSettings()" aria-label="Close settings">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="settings-modal__body">
+          <!-- Visual Settings -->
+          <div class="settings-section">
+            <h3 class="settings-section__title">Visual Settings</h3>
+            <div class="settings-group">
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="enable-animations" class="setting-item__checkbox" checked>
+                  <span class="setting-item__text">Enable Animations</span>
+                </label>
+                <p class="setting-item__description">Toggle page animations and transitions</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="enable-noise-effects" class="setting-item__checkbox" checked>
+                  <span class="setting-item__text">Enable Noise Effects</span>
+                </label>
+                <p class="setting-item__description">Show psychedelic noise overlays</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="enable-distortions" class="setting-item__checkbox" checked>
+                  <span class="setting-item__text">Enable Visual Distortions</span>
+                </label>
+                <p class="setting-item__description">Apply visual distortion effects</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <span class="setting-item__text">Animation Speed</span>
+                  <input type="range" id="animation-speed" class="setting-item__slider" min="0.5" max="3" step="0.1" value="1">
+                  <span class="setting-item__value" id="animation-speed-value">1x</span>
+                </label>
+                <p class="setting-item__description">Adjust animation playback speed</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Audio Settings -->
+          <div class="settings-section">
+            <h3 class="settings-section__title">Audio Settings</h3>
+            <div class="settings-group">
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="enable-audio" class="setting-item__checkbox">
+                  <span class="setting-item__text">Enable Audio</span>
+                </label>
+                <p class="setting-item__description">Enable sound effects and background music</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <span class="setting-item__text">Master Volume</span>
+                  <input type="range" id="master-volume" class="setting-item__slider" min="0" max="100" step="1" value="50">
+                  <span class="setting-item__value" id="master-volume-value">50%</span>
+                </label>
+                <p class="setting-item__description">Control overall volume level</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="enable-ambient-sounds" class="setting-item__checkbox">
+                  <span class="setting-item__text">Ambient Sounds</span>
+                </label>
+                <p class="setting-item__description">Play atmospheric background sounds</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Performance -->
+          <div class="settings-section">
+            <h3 class="settings-section__title">Performance</h3>
+            <div class="settings-group">
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <span class="setting-item__text">Graphics Quality</span>
+                  <select id="graphics-quality" class="setting-item__select">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                    <option value="ultra">Ultra</option>
+                  </select>
+                </label>
+                <p class="setting-item__description">Adjust visual quality for better performance</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="reduce-motion" class="setting-item__checkbox">
+                  <span class="setting-item__text">Reduce Motion</span>
+                </label>
+                <p class="setting-item__description">Minimize animations for better performance</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <span class="setting-item__text">Frame Rate Limit</span>
+                  <select id="frame-rate-limit" class="setting-item__select">
+                    <option value="30">30 FPS</option>
+                    <option value="60" selected>60 FPS</option>
+                    <option value="120">120 FPS</option>
+                    <option value="unlimited">Unlimited</option>
+                  </select>
+                </label>
+                <p class="setting-item__description">Limit frame rate to save battery</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Accessibility -->
+          <div class="settings-section">
+            <h3 class="settings-section__title">Accessibility</h3>
+            <div class="settings-group">
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="high-contrast" class="setting-item__checkbox">
+                  <span class="setting-item__text">High Contrast Mode</span>
+                </label>
+                <p class="setting-item__description">Increase contrast for better visibility</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="large-text" class="setting-item__checkbox">
+                  <span class="setting-item__text">Large Text</span>
+                </label>
+                <p class="setting-item__description">Increase text size for better readability</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="keyboard-navigation" class="setting-item__checkbox" checked>
+                  <span class="setting-item__text">Keyboard Navigation</span>
+                </label>
+                <p class="setting-item__description">Enable keyboard shortcuts and navigation</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="screen-reader-mode" class="setting-item__checkbox">
+                  <span class="setting-item__text">Screen Reader Mode</span>
+                </label>
+                <p class="setting-item__description">Optimize for screen readers</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experimental Features -->
+          <div class="settings-section">
+            <h3 class="settings-section__title">Experimental Features</h3>
+            <div class="settings-group">
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="beta-features" class="setting-item__checkbox">
+                  <span class="setting-item__text">Enable Beta Features</span>
+                </label>
+                <p class="setting-item__description">Access experimental features (may be unstable)</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <input type="checkbox" id="debug-mode" class="setting-item__checkbox">
+                  <span class="setting-item__text">Debug Mode</span>
+                </label>
+                <p class="setting-item__description">Show debug information and controls</p>
+              </div>
+              
+              <div class="setting-item">
+                <label class="setting-item__label">
+                  <span class="setting-item__text">Psychedelic Intensity</span>
+                  <input type="range" id="psychedelic-intensity" class="setting-item__slider" min="0" max="100" step="5" value="50">
+                  <span class="setting-item__value" id="psychedelic-intensity-value">50%</span>
+                </label>
+                <p class="setting-item__description">Control the intensity of psychedelic effects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-modal__footer">
+          <button class="settings-btn settings-btn--secondary" onclick="resetSettings()">Reset to Default</button>
+          <button class="settings-btn settings-btn--primary" onclick="saveSettings()">Save Settings</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Load compiled JavaScript application (includes settings) -->
+    <script type="module" src="./dist/main.js"></script>
+    
+    <!-- Load settings module separately for immediate availability -->
+    <script type="module" src="./dist/settings/global.js"></script>
+  <!-- Background Network Animation Canvas -->
+  <canvas id="node-network-canvas"></canvas>
+  
+  <script type="module">
+    import NodeNetworkAnimation from './dist/animations/NodeNetworkAnimation.js';
+
+    // Initialize background network animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.getElementById('node-network-canvas');
+      if (canvas) {
+        // The NodeNetworkAnimation class now handles canvas sizing internally
+        new NodeNetworkAnimation(canvas, 80); // 80 nodes for fullscreen
+        console.log('Background network animation initialized');
+      }
+    });
+  </script>
+</body>
+</html>
+
