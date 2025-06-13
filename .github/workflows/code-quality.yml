@@ -1,0 +1,85 @@
+name: 🔍 Code Quality Check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 📦 Install Dependencies
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci
+        else
+          npm install
+        fi
+        
+    - name: 🔍 Install TypeScript
+      run: npm install -g typescript
+      
+    - name: ✅ TypeScript Type Check
+      run: npm run typecheck
+      
+    - name: 📊 Project Statistics
+      run: |
+        echo "📈 Project Statistics:"
+        echo "📁 TypeScript files: $(find src -name '*.ts' | wc -l)"
+        echo "📄 Total lines of code: $(find src -name '*.ts' -exec wc -l {} + | tail -1 | awk '{print $1}')"
+        echo "🎨 CSS files: $(find src -name '*.css' | wc -l)"
+        echo "📋 Project size: $(du -sh . | awk '{print $1}')"
+        
+    - name: 🧪 Build Test
+      run: |
+        chmod +x ./build.sh
+        ./build.sh
+        
+    - name: 📦 Bundle Analysis
+      run: |
+        echo "📦 Build Output Analysis:"
+        if [ -d "dist" ]; then
+          echo "✅ Build successful"
+          echo "📏 Dist size: $(du -sh dist | awk '{print $1}')"
+          echo "📁 Generated files:"
+          find dist -type f -name "*.js" -o -name "*.css" | sort
+        else
+          echo "❌ Build failed - no dist directory"
+          exit 1
+        fi
+        
+    - name: 🔍 Security Check
+      run: |
+        echo "🔒 Security Analysis:"
+        # Check for potential security issues in package.json
+        if command -v npm >/dev/null 2>&1; then
+          npm audit --audit-level=moderate || echo "⚠️ Security vulnerabilities found"
+        fi
+        
+    - name: 📊 Performance Hints
+      run: |
+        echo "⚡ Performance Analysis:"
+        echo "📦 Main bundle size:"
+        if [ -f "dist/main.js" ]; then
+          ls -lh dist/main.js | awk '{print "Main JS: " $5}'
+        fi
+        if [ -f "dist/styles/main.css" ]; then
+          ls -lh dist/styles/main.css | awk '{print "Main CSS: " $5}'
+        fi
+        echo "🎯 Optimization suggestions:"
+        echo "  - Use code splitting for large bundles (>250KB)"
+        echo "  - Minimize CSS and JS in production"
+        echo "  - Consider lazy loading for non-critical resources"
+

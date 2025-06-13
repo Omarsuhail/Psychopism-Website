@@ -6,6 +6,8 @@
 
 **Official website for Psychopism - An open-source psychedelic video game where reality distorts and logic is just an illusion.**
 
+[![Build and Deploy](https://github.com/VoidVortex-Games/Psychopism-Website/workflows/🚀%20Build%20and%20Deploy%20Psychopism%20Website/badge.svg)](https://github.com/VoidVortex-Games/Psychopism-Website/actions)
+[![Code Quality](https://github.com/VoidVortex-Games/Psychopism-Website/workflows/🔍%20Code%20Quality%20Check/badge.svg)](https://github.com/VoidVortex-Games/Psychopism-Website/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
