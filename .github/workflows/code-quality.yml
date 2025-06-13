@@ -19,6 +19,15 @@ jobs:
       with:
         node-version: '18'
         cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+        
+    - name: 🔍 Check Dependencies Lock File
+      run: |
+        if [ -f package-lock.json ]; then
+          echo "✅ package-lock.json found, will use npm ci"
+        else
+          echo "⚠️ package-lock.json not found, will use npm install"
+        fi
         
     - name: 📦 Install Dependencies
       run: |
